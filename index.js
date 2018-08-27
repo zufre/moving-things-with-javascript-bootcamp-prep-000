@@ -7,13 +7,13 @@ function moveDodgerLeft() {
 
 
   if (parseInt(dodger.style.left.replace('px', ''), 10) > 0) {
-    dodger.style.left = `${left - 1}px`
+    dodger.style.left = `${(parseInt(dodger.style.left.replace('px', ''), 10) - 1)}px`
   }
 }
 
 function moveDodgerRight() {
   if (parseInt(dodger.style.right.replace('px', ''), 10) > 0) {
-    dodger.style.right = `${parseInt(dodger.style.right.replace('px', ''), 10) - 1}px`
+    dodger.style.right = `${(parseInt(dodger.style.right.replace('px', ''), 10) - 1)}px`
   }
 }
 document.addEventListener('keydown', function(e) {
