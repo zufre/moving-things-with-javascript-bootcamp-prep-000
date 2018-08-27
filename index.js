@@ -3,10 +3,10 @@ const app = "I don't do much."
 var dodger = document.getElementById('dodger');
 
 function moveDodgerLeft() {
-  var leftNumbers = dodger.style.left.replace('px', '')
-  var left = parseInt(leftNumbers, 10)
+  
+  
 
-  if (left > 0) {
+  if (parseInt(dodger.style.left.replace('px', ''), 10) > 0) {
     dodger.style.left = `${left - 1}px`
   }
 }
@@ -22,7 +22,7 @@ function moveDodgerRight() {
 document.addEventListener('keydown', function(e) {
   if (e.which === 37) {
     moveDodgerRight()
-  }else if (e.which === 38) {
+  }else if (e.which === 39) {
     moveDodgerLeft()
   }
 })
