@@ -16,9 +16,14 @@
         var right = parseInt(rightNumbers, 10)
 
         if (right<0) {
-          dosger.style.lefdt = `${right - 1}px`
+          dodger.style.lefdt = `${right - 1}px`
         }
       }
+      document.addEventListener('keydown', function(e) {
+        if e.which === 38) {
+          moveDodgerRight()
+        }
+      })
     </script>
   </body>
 </html>
